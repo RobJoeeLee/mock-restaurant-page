@@ -1,4 +1,4 @@
-export default funciton loadHome(){
+export default function loadHome(){
     const content = document.getElementById("content");
     content.innerHTML = "";
 
