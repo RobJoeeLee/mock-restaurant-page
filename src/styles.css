@@ -96,3 +96,10 @@ footer {
 .home-hours-content {
     font-size: 1.75rem;
 }
+
+.menu-wrapper {
+    text-align: left;
+    padding: 2rem;
+    max-width: 800px;
+    margin-right: auto;
+}

@@ -2,6 +2,9 @@ export default function loadMenu(){
     const content = document.getElementById("content");
     content.innerHTML = "";
 
+    const menuWrapper = document.createElement("div");
+    menuWrapper.classList.add("menu-wrapper");
+
     const menuHeadline = document.createElement("h1");
     menuHeadline.textContent = "Menu";
 
@@ -90,8 +93,10 @@ export default function loadMenu(){
 
     Object.keys(menu).forEach((sectionName) => {
         const section = renderMenuSection(sectionName, menu[sectionName]);
-        content.appendChild(section);
+        menuWrapper.appendChild(section);
     });
+
+    content.appendChild(menuWrapper);
 }
 
 function renderMenuSection(title, items){
@@ -112,6 +117,5 @@ function renderMenuSection(title, items){
             section.appendChild(itemDescription);
         }
     });
-
     return section;
 }
