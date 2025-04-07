@@ -40,8 +40,8 @@ button {
     cursor: pointer;
     border-radius: 5px;
     background-color: rgb(57, 45, 31);
-    border: 2px solid rgb(227, 224, 224);
-    color: rgb(227, 224, 224);
+    border: 2px solid tan;
+    color: tan;
 
 }
 
@@ -49,6 +49,10 @@ button:hover {
     background-color: tan;
     border: 2px solid tan;
     color: rgb(57, 45, 31);
+}
+
+.home-headline {
+    font-size: 2.5rem;
 }
 
 #content {
@@ -71,8 +75,24 @@ footer {
 
 .restaurant-image {
     width: 100%;
-    max-width: 500px;
+    max-width: 700px;
     height: auto;
     display: block;
     margin: 20px auto;
-  }
+    border-radius: 10px;
+}
+
+.home-page-description { 
+    font-size: 1.75rem;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.home-hours-title {
+    font-size: 2.5rem;
+}
+
+.home-hours-content {
+    font-size: 1.75rem;
+}

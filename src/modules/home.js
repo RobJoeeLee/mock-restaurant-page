@@ -6,6 +6,7 @@ export default function loadHome() {
 
   const headline = document.createElement("h1");
   headline.textContent = "Welcome to Our Restaurant";
+  headline.classList.add("home-headline");
 
   const image = document.createElement("img");
   image.src = insideRestaurantImage;
@@ -13,7 +14,7 @@ export default function loadHome() {
   image.classList.add("restaurant-image");
 
   const description = document.createElement("p");
-  description.textContent = "At [Restaurant Name], we're passionate about creating memorable dining experiences. Whether you're looking for a casual night out with friends, a romantic dinner, or a special occasion celebration, we're dedicated to providing a warm and inviting atmosphere where you can relax and enjoy delicious food";
+  description.textContent = "At [Restaurant Name], we're passionate about creating memorable dining experiences. Whether you're looking for a casual night out with friends, a romantic dinner, or a special occasion celebration, we're dedicated to providing a warm and inviting atmosphere where you can relax and enjoy delicious food.";
   description.classList.add("home-page-description");
 
   const homeHoursTitle = document.createElement("h1");
