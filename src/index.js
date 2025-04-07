@@ -2,6 +2,7 @@ import "./styles.css";
 import loadHome from "./modules/home";
 import loadMenu from "./modules/menu";
 import loadAbout from "./modules/about";
+import insideRestaurantImage from "./images/inside-restaurant.jpg"
 
 function createHomePage(){
     const content = document.getElementById("content");
@@ -21,6 +22,11 @@ function setupEventListeners(){
     document.getElementById("menu-button").addEventListener("click", loadMenu);
     document.getElementById("about-button").addEventListener("click", loadAbout);
 }
+
+const insideRestaurant = document.createElement("img");
+insideRestaurant.src = insideRestaurantImage;
+insideRestaurant.alt = "Inside Restaurant";
+document.getElementById("content").appendChild(insideRestaurant);
 
 createHomePage();
 setupEventListeners();
