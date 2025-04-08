@@ -15,6 +15,7 @@ export default function loadAbout(){
 
 
     const aboutAddress = document.createElement("p");
+    aboutAddress.classList.add("about-address");
     aboutAddress.innerHTML = `
     <strong>Address</strong><br>
     123 Food Street<br>
@@ -40,18 +41,21 @@ export default function loadAbout(){
     });
 
     const aboutPhone = document.createElement("p");
+    aboutPhone.classList.add("about-phone")
     aboutPhone.innerHTML = `
     <strong>Phone</strong><br>
     (555) 123-4567
     `;
 
     const aboutEmail = document.createElement("p");
+    aboutEmail.classList.add("about-email");
     aboutEmail.innerHTML = `
     <strong>Email</strong><br>
     info@mockrestaurant.com
     `;
 
     const aboutReservations = document.createElement("p");
+    aboutReservations.classList.add("about-reservations");
     aboutReservations.innerHTML = `
     <strong>Reservations</strong><br>
     For reservations, please call us or book online.

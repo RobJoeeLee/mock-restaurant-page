@@ -103,3 +103,16 @@ footer {
     max-width: 800px;
     margin-right: auto;
 }
+
+.about-content {
+    text-align: left;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-address{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
