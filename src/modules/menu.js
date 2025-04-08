@@ -102,7 +102,7 @@ export default function loadMenu(){
 function renderMenuSection(title, items){
     const section = document.createElement("section");
 
-    const sectionTitle = document.createElement("h2");
+    const sectionTitle = document.createElement("h1");
     sectionTitle.textContent = title;
     section.appendChild(sectionTitle);
 
