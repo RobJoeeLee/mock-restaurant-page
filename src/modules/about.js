@@ -24,9 +24,11 @@ export default function loadAbout(){
     `;
 
     const aboutHoursTitle = document.createElement("strong");
+    aboutHoursTitle.classList.add("about-hours-title");
     aboutHoursTitle.textContent = "Hours";
 
     const aboutHoursList = document.createElement("ul");
+    aboutHoursList.classList.add("about-hours-list");
     const hours = [
         "Monday - Thursday: 11:30 AM - 10:00 PM",
         "Friday: 11:30 AM - 11:00 PM",
